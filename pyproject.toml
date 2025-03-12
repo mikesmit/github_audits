@@ -1,0 +1,20 @@
+[project]
+name = "review-environments"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Michael Smit",email = "mikesmit@coderberry.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+review-environments = "review_environments.main:main"
